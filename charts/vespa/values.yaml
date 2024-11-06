@@ -56,8 +56,7 @@ labels:
   app: vespa
 
 service:
-  name: document-index-service
-  type: LoadBalancer
+  name: vespa-service
   ports:
     - name: vespa-tenant-port
       port: 19071
