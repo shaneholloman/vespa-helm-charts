@@ -53,7 +53,7 @@ spec:
           {{- end }}
           env:
           - name: VESPA_CONFIGSERVERS
-            value: {{ .Release.Name }}-vespa-0.vespa.{{ .Release.Namespace }}.svc.cluster.local
+            value: da-vespa-0.{{ .Values.service.name }}.{{ .Release.Namespace }}.svc.cluster.local
 
   volumeClaimTemplates:
   {{- range .Values.volumeClaimTemplates }}
