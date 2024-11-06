@@ -57,6 +57,7 @@ labels:
 
 service:
   name: vespa-service
+  type: ClusterIP  # temporarily unused
   ports:
     - name: vespa-tenant-port
       port: 19071
