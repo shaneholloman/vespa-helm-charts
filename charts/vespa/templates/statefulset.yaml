@@ -40,11 +40,11 @@ spec:
           {{- range .Values.statefulSet.ports }}
             - containerPort: {{ .containerPort }}
           {{- end }}
-          readinessProbe:
-            httpGet:
-              path: {{ .Values.readinessProbe.httpGet.path }}
-              port: {{ .Values.readinessProbe.httpGet.port }}
-              scheme: {{ .Values.readinessProbe.httpGet.scheme }}
+#           readinessProbe:
+#             httpGet:
+#               path: {{ .Values.readinessProbe.httpGet.path }}
+#               port: {{ .Values.readinessProbe.httpGet.port }}
+#               scheme: {{ .Values.readinessProbe.httpGet.scheme }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           {{- with .Values.volumeMounts }}
