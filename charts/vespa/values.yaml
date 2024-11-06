@@ -31,7 +31,6 @@ podLabels:
   app: vespa
 
 statefulSet:
-  name: vespa
   ports:
     - containerPort: 19071
     - containerPort: 8081

@@ -1,11 +1,11 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: {{ .Values.statefulSet.name }}
+  name: {{ .Release.Name }}-vespa
   labels:
     {{- toYaml .Values.labels | nindent 4 }}
 spec:
-  serviceName: {{ .Values.statefulSet.name }}
+  serviceName: {{ .Release.Name }}-vespa
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
