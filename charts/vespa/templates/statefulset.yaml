@@ -5,7 +5,7 @@ metadata:
   labels:
     {{- toYaml .Values.labels | nindent 4 }}
 spec:
-  serviceName: {{ .Release.Name }}-vespa
+  serviceName: vespa
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
@@ -53,7 +53,7 @@ spec:
           {{- end }}
           env:
           - name: VESPA_CONFIGSERVERS
-            value: vespa-0.vespa.{{ .Release.Namespace }}.svc.cluster.local
+            value: {{ .Release.Name }}-vespa-0.vespa.{{ .Release.Namespace }}.svc.cluster.local
 
   volumeClaimTemplates:
   {{- range .Values.volumeClaimTemplates }}
