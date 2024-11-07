@@ -1,5 +1,7 @@
 # Changelog
 
+## [0.2.16] forked to danswer-ai, brought up to date to work with Danswer and helm chart testing
+
 ## [0.2.3](https://github.com/unoplat/vespa-helm-charts/compare/vespa-0.2.2...vespa-v0.2.3) (2024-05-07)
 
 
