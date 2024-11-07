@@ -50,6 +50,10 @@ app.kubernetes.io/name: {{ include "vespa.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}
 
+{{- define "vespa.healthEndpoint" -}}
+da-vespa-0.{{ .Values.service.name }}:{{ .Values.vespa.service.ports[0].port }}/state/v1/health
+{{- end }}
+
 {{/*
 Create the name of the service account to use
 */}}
