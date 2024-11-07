@@ -11,5 +11,5 @@ spec:
     - name: wget
       image: busybox
       command: ['wget']
-      args: ['{{ include "vespa.fullname" . }}:{{ .Values.service.port }}']
+      args: ['da-vespa-0.{{ .Values.service.name }}:{{ .Values.vespa.service.ports[0].port }}/state/v1/health']
   restartPolicy: Never
