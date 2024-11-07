@@ -51,7 +51,7 @@ app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}
 
 {{- define "vespa.healthEndpoint" -}}
-da-vespa-0.{{ .Values.service.name }}:{{ .Values.vespa.service.ports[0].port }}/state/v1/health
+da-vespa-0.{{ .Values.service.name }}:{{ .Values.service.tenantPort }}/state/v1/health
 {{- end }}
 
 {{/*
