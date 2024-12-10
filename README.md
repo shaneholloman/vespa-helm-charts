@@ -9,11 +9,11 @@ This will house vespa helm charts.
 
 ### Installation 
 ```
-helm repo add vespa https://danswer-ai.github.io/vespa-helm-charts
+helm repo add vespa https://onyx-dot-app.github.io/vespa-helm-charts
 helm repo update
-helm install danswer-vespa vespa/vespa
+helm install onyx-vespa vespa/vespa
 ```
 
 # Changelog
 
-https://github.com/danswer-ai/vespa-helm-charts/blob/main/charts/vespa/CHANGELOG.md 
+https://github.com/onyx-dot-app/vespa-helm-charts/blob/main/charts/vespa/CHANGELOG.md 
