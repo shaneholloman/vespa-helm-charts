@@ -128,7 +128,7 @@ volumeClaimTemplates:
      spec:
        accessModes:
          - ReadWriteOnce
-       storageClassName: ebsstorage
+       storageClassName: ""
        resources:
          requests:
            storage: 1Gi
