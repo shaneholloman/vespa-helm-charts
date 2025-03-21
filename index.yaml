@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  vespa:
+  - apiVersion: v2
+    appVersion: 8.277.17
+    created: "2025-03-22T01:06:24.847972+13:00"
+    description: A Helm chart for Kubernetes
+    digest: c936bcd5cf88b6fb6a848c334586e4cf22b02fde5a8bf9ab0abd8734dce57e9c
+    name: vespa
+    type: application
+    urls:
+    - https://shaneholloman.github.io/vespa-helm-charts/vespa-0.2.20.tgz
+    version: 0.2.20
+generated: "2025-03-22T01:06:24.847224+13:00"
