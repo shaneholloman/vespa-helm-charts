@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.2.21](https://github.com/onyx-dot-app/vespa-helm-charts/compare/vespa-0.2.18...vespa-v0.2.16) (2024-12-10)
+
+* Update default memory to 4GB and storage to 8GB per Vespa recommended settings.
+  * See https://docs.vespa.ai/en/vespa-quick-start.html
+
 ## [0.2.18](https://github.com/onyx-dot-app/vespa-helm-charts/compare/vespa-0.2.18...vespa-v0.2.16) (2024-12-10)
 
 * Rename danswer-ai to onyx-dot-app

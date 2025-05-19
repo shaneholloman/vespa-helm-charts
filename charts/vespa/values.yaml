@@ -129,6 +129,6 @@ volumeClaimTemplates:
       accessModes:
         - ReadWriteOnce
       storageClassName: ""
-        resources:
-          requests:
-            storage: 8Gi
+      resources:
+        requests:
+          storage: 8Gi
