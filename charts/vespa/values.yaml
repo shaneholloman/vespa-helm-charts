@@ -10,7 +10,7 @@ image:
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   # Update this also in Chart.yaml/appVersion
-  tag: "8.277.17"
+  tag: "8.526.15"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -87,10 +87,10 @@ ingress:
 
 resources:
   requests:
-    memory: "4000Mi"
+    memory: "4Gi"
     cpu: "1000m"
   limits:
-    memory: "4000Mi"
+    memory: "4Gi"
     cpu: "1000m"
 
 autoscaling:
