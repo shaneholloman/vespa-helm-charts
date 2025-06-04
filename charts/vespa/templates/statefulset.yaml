@@ -54,6 +54,8 @@ spec:
           env:
           - name: VESPA_CONFIGSERVERS
             value: da-vespa-0.{{ .Values.service.name }}.{{ .Release.Namespace }}.svc.cluster.local
+          - name: VESPA_SKIP_UPGRADE_CHECK
+            value: "true"
 
   volumeClaimTemplates:
   {{- range .Values.volumeClaimTemplates }}
