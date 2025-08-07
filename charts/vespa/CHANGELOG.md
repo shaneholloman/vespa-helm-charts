@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.2.24](https://github.com/onyx-dot-app/vespa-helm-charts/compare/vespa-0.2.23...vespa-0.2.24) (2025-08-06)
+
+### Bug Fixes
+
+* Add missing pod scheduling fields to StatefulSet template ([#PR_NUMBER](https://github.com/onyx-dot-app/vespa-helm-charts/pull/PR_NUMBER))
+  * Add `nodeSelector` support for node selection
+  * Add `affinity` support for advanced scheduling rules  
+  * Add `tolerations` support for taint toleration
+  * This enables proper pod scheduling configuration through Helm values, which is essential for production deployments with dedicated nodes and taints
+
 ## [0.2.21](https://github.com/onyx-dot-app/vespa-helm-charts/compare/vespa-0.2.18...vespa-v0.2.16) (2024-12-10)
 
 * Update default memory to 4GB and storage to 8GB per Vespa recommended settings.
